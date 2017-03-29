@@ -9,6 +9,6 @@ class Project extends Model
     public $timestamps = false;
 
     public function languages() {
-        return $this->belongsToMany('App\Language')
+        return $this->belongsToMany('App\Language', 'language_project', 'project_id', 'lang_id');
     }
 }
