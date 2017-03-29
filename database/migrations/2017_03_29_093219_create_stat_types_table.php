@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProjectsTable extends Migration
+class CreateStatTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,17 @@ class CreateProjectsTable extends Migration
      */
     public function up()
     {
-        Schema::create('projects', function (Blueprint $table) {
+        Schema::create('stat_types', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 30);
-            $table->string('description', 100);
+            $table->string('type', 20);
         });
 
-        Schema::create('language_project', function (Blueprint $table) {
+        Schema::create('github_stats', function (Blueprint $table) {
             $table->integer('lang_id');
-            $table->integer('project_id');
+            $table->integer('type_id');
+            $table->bigInteger('quantity');
 
-            $table->primary(['lang_id', 'project_id']);
+            $table->primary(['lang_id', 'type_id']);
         });
     }
 
@@ -34,7 +34,7 @@ class CreateProjectsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('projects');
-        Schema::dropIfExists('language_project');
+        Schema::dropIfExists('stat_types');
+        Schema::dropIfExists('github_stats');
     }
 }

@@ -11,7 +11,7 @@ class UseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('languages')->delete();
+        DB::table('uses')->delete();
         $uses = [
             array('description' => 'Application'),
             array('description' => 'Artificial Intelligence'),
