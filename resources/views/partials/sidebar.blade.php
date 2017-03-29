@@ -6,12 +6,12 @@
         <ul class="sidebar-menu">
             <li class="header">MENU PRINCIPAL</li>
             <li>
-                <a href="#">
+                <a href="/lenguajes">
                     <i class="fa fa-language"></i> <span>Lenguajes de programación</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="">
                     <i class="fa fa-cog"></i> <span>Areas de uso</span>
                 </a>
             </li>

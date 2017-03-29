@@ -1,7 +1,6 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-        <b>Version</b> 2.3.8
+        <b>2017</b>
     </div>
-    <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-    reserved.
+    <strong>Verónica Clavijo | Diplomado GNU / Linux</strong>
 </footer>
