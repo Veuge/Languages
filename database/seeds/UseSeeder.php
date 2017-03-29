@@ -11,7 +11,7 @@ class UseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('uses')->delete();
+        DB::table('l_uses')->delete();
         $uses = [
             array('description' => 'Application'),
             array('description' => 'Artificial Intelligence'),
@@ -45,7 +45,7 @@ class UseSeeder extends Seeder
             array('description' => 'Web')
         ];
 
-        DB::table('uses')->insert($uses);
+        DB::table('l_uses')->insert($uses);
 
         // Pivot table
         DB::table('language_use')->delete();

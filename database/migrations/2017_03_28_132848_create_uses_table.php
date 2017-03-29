@@ -13,7 +13,7 @@ class CreateUsesTable extends Migration
      */
     public function up()
     {
-        Schema::create('uses', function (Blueprint $table) {
+        Schema::create('l_uses', function (Blueprint $table) {
             $table->increments('id');
             $table->string('description', 30);
         });
@@ -33,7 +33,7 @@ class CreateUsesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('uses');
+        Schema::dropIfExists('l_uses');
         Schema::dropIfExists('language_use');
     }
 }
